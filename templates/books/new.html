@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/books" method="POST">
+    <div>
+        <label for="description">Title</label>
+        <input type="text" name="title" id="description" placeholder="Title" required autofocus>
+    </div>
+    <div>
+        <label for="duration">Genre</label>
+        <input type="text" name="genre" id="duration" placeholder="Genre" required autofocus>
+    </div>
+    <div>
+        <label for="user">Author</label>
+        <input type="text" name="author" id="user" placeholder="Author">
+    </div>
+    <button type="submit">Add Book</button>
+
+</form>
+
+
+
+{% endblock %}
